@@ -5,8 +5,7 @@ public class Passenger extends AbstractEntity{
     private String fullName;
     private String passportNumber;
 
-    public Passenger(Long id, String fullName, String passportNumber) {
-        super(id);
+    public Passenger(String fullName, String passportNumber) {
         validate(fullName, passportNumber);
         this.fullName = fullName.trim();
         this.passportNumber = passportNumber.trim();

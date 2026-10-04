@@ -14,6 +14,4 @@ public interface MyRepository<E extends AbstractEntity> {
     List<E> findAll();
 
     void deleteById(Long id);
-
-    void delete(E entity);
 }

@@ -1,0 +1,11 @@
+package org.airport.repository;
+
+import org.airport.entity.Flight;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface FlightRepository extends MyRepository<Flight> {
+
+    Optional<Flight> findByFlightNumber(String flightNumber);
+}
